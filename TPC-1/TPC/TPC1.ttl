@@ -1,0 +1,334 @@
+@prefix : <http://www.semanticweb.org/ze/ontologies/2020/TPC1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ze/ontologies/2020/TPC1> .
+
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta
+:frequenta rdf:type owl:ObjectProperty ;
+           owl:inverseOf :é_frequentada_por ;
+           rdfs:domain :Professor ;
+           rdfs:range :UC .
+
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#leciona
+:leciona rdf:type owl:ObjectProperty ;
+         owl:inverseOf :é_lecionada_por ;
+         rdfs:domain :Professor ;
+         rdfs:range :UC .
+
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#é_frequentada_por
+:é_frequentada_por rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#é_lecionada_por
+:é_lecionada_por rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#course
+:course rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Student .
+
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Student .
+
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#number
+:number rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Student .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#Professor
+:Professor rdf:type owl:Class ;
+           rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#Student
+:Student rdf:type owl:Class ;
+         rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/ze/ontologies/2020/TPC1#UC
+:UC rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas_de_Compreensão_de_Software> rdf:type owl:NamedIndividual ,<http://www.semanticweb.org/ze/ontologies/2020/TPC1#UC> .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#jcr>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#leciona> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento_e_Representação_de_Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "jcr@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "José Carlos Leite Ramalho"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#prh>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#leciona> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas_de_Compreensão_de_Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "prh@mail.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Pedro_Manuel_Rangel_Santos_Henriques"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento_e_Representação_de_Informação> rdf:type owl:NamedIndividual ,<http://www.semanticweb.org/ze/ontologies/2020/TPC1#UC> .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A81712>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A81712@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A81712"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Ana Filipa Pereira"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A71385>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A71385@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A71385"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Bruno Silva"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A78997>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A78997@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A78997"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Bruno Sousa"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A82324>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A82324@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A82324"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "ze Barbosa"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#PG37149>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "PG37149@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "PG37149"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Diego Silva"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A75536>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A75536@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A75536"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Eduardo Araújo"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A71940>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A71940@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A71940"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Eduardo Cunha"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A70922>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A70922@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A70922"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Francisco Costa"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#PG38415>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "PG38415@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "PG38415"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Henrique Ribeiro"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A80757>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A80757@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A80757"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Jaime Leite"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#PG33874>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "PG33874@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "PG33874"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "João Grenhas"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A75569>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A75569@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A75569"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "João Leal"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A80874>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A80874@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A80874"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "João Pimentel"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A76516>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A76516@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A76516"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "João Vieira"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A80424>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A80424@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A80424"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "José Carvalho"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A63129>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A63129@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A63129"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "José Freitas"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A72187>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A72187@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A72187"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "José Lima"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A74036>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A74036@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A74036"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Manuel Monteiro"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A67713>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A67713@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A67713"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Manuel Moreno"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#PG39292>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "PG39292@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "PG39292"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Maria Pinto"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#PG41089>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "PG41089@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "PG41089"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Miguel Dias"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#PG17918>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "PG17918@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "PG17918"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Paulo Martins"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A33524>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A33524@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A33524"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Pedro Paes"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A74264>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A74264@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A74264"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Rafael Silva"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A74568>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A74568@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A74568"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Ricardo Canela"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A75411>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A75411@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A75411"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Ricardo Leal"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A78914>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A78914@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A78914"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Ricardo Martins"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A78764>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A78764@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A78764"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Ricardo Neves"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A77045>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A77045@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A77045"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Ricardo Pereira"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A79947>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A79947@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A79947"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Rui Costa"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A74658>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A74658@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A74658"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Rui Vieira"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A82617>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A82617@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A82617"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Shahzod Yusupov"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A75328>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A75328@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A75328"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Tiago Baptista"^^xsd:string .
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#A61032>rdf:type owl:NamedIndividual ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Gramáticas de Compreensão de Software> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#frequenta> <http://www.semanticweb.org/ze/ontologies/2020/TPC1#Processamento e Representação de Informação> ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#course> "MIEI"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#email> "A61032@alunos.uminho.com"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#number> "A61032"^^xsd:string ;
+<http://www.semanticweb.org/ze/ontologies/2020/TPC1#name> "Tiago Pereira"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

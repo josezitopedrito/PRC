@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/ze/Oxygen%20XML%20Editor%2021/pr.dtd">
+<pr>
+    <meta>
+        <keyName>PRC2020-A80424-T1</keyName>
+        <title>Ontologia com informações relativas ao primeiro semestre do perfil de PLC</title>
+        <bDate>3 de fevereiro de 2020</bDate>
+        <eDate>10 de fevereiro de 2020</eDate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workTeam>
+        <member>
+            <identifier>A80424</identifier>
+            <name>José Pedro Saraiva de Carvalho</name>
+            <email>a80424@alunos.uminho.pt</email>
+            <photo path="photo.jpg"/>
+        </member>
+    </workTeam>
+    <abstract>
+        <p>Primeiramente foi gerado um ficheiro <b>CSV</b>, <i>PRI2019-Avaliacao.csv</i>, a partir da informação apresentada pelo docente de PRI na plataforma e-learning. Alguma informação dos alunos foi recolhida desse ficheiro CSV, sendo depois transferida para um outro ficheiro em formato <b>XML</b> <i>studentsPRI.xml</i>, com ajuda de um script elaborado em Python, <i>extracao.py</i>.</p>
+        <p>A informação em formato XML foi convertida, utilizando um ficheiro XSLT <i>students.xsl</i>, para o formato Turtle, <i>students.ttl</i>. Entretanto outro ficheiro em formato Turtle, <i>proto.ttl</i>, foi gerado com a parte estrutural da ontologia, com o auxílio do <i>Protégé</i>.</p>
+        <p>No final são juntados os dois ficheiros em formato Turtle num único ficheiro, <i>TPC1.ttl</i>, representativo da ontologia de forma integral.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="../PR">Diretoria relativa ao Project Record</deliverable>
+        <deliverable path="../TPC">Diretoria onde se encontram os Conteúdos do TPC</deliverable>
+    </deliverables>
+</pr>

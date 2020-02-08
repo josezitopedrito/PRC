@@ -1,0 +1,309 @@
+<?xml version="1.0" ?>
+<root>
+	<student>
+		<number>A81712</number>
+		<name>Ana Filipa Pereira</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A71385</number>
+		<name>Bruno Silva</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A78997</number>
+		<name>Bruno Sousa</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A82324</number>
+		<name>Carlos Barbosa</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>PG37149</number>
+		<name>Diego Silva</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A75536</number>
+		<name>Eduardo Araújo</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A71940</number>
+		<name>Eduardo Cunha</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A70922</number>
+		<name>Francisco Costa</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>PG38415</number>
+		<name>Henrique Ribeiro</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A80757</number>
+		<name>Jaime Leite</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>PG33874</number>
+		<name>João Grenhas</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A75569</number>
+		<name>João Leal</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A80874</number>
+		<name>João Pimentel</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A76516</number>
+		<name>João Vieira</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A80424</number>
+		<name>José Carvalho</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A63129</number>
+		<name>José Freitas</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A72187</number>
+		<name>José Lima</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A74036</number>
+		<name>Manuel Monteiro</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A67713</number>
+		<name>Manuel Moreno</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>PG39292</number>
+		<name>Maria Pinto</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>PG41089</number>
+		<name>Miguel Dias</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>PG17918</number>
+		<name>Paulo Martins</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A33524</number>
+		<name>Pedro Paes</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A74264</number>
+		<name>Rafael Silva</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A74568</number>
+		<name>Ricardo Canela</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A75411</number>
+		<name>Ricardo Leal</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A78914</number>
+		<name>Ricardo Martins</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A78764</number>
+		<name>Ricardo Neves</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A77045</number>
+		<name>Ricardo Pereira</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A79947</number>
+		<name>Rui Costa</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A74658</number>
+		<name>Rui Vieira</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A82617</number>
+		<name>Shahzod Yusupov</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A75328</number>
+		<name>Tiago Baptista</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+	<student>
+		<number>A61032</number>
+		<name>Tiago Pereira</name>
+		<course>MIEI</course>
+		<UCs>
+			<UC>Gramáticas de Compreensão de Software</UC>
+			<UC>Processamento e Representação de Informação</UC>
+		</UCs>
+	</student>
+</root>

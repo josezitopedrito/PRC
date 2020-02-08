@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <style>
+      body{
+      background-color: aliceblue;
+      }
+      div{
+      border-top: solid black;
+      margin:15px;
+      }    
+      
+      
+   </style>
+   <head>
+      <meta charset="UTF-8"></meta>
+      <title>Ontologia com informações relativas ao primeiro semestre do perfil de PLC</title>
+   </head>
+   <body>
+      <div style="margin:1cm">
+         
+         <h1>PRC2020-A80424-T1</h1>
+         <h2>Ontologia com informações relativas ao primeiro semestre do perfil de PLC</h2>
+         <h3>Begin Date</h3>3 de fevereiro de 2020
+         <h3>End Date</h3>10 de fevereiro de 2020
+         <br></br>
+         <table border="2">
+            <tr>
+               <th>Supervisor's Name</th>
+               <td>José Carlos Ramalho</td>
+            </tr>
+            <tr>
+               <th>Supervisor's Homepage</th>
+               <td>
+                  <a href="http://www4.di.uminho.pt/~jcr/">http://www4.di.uminho.pt/~jcr/</a>
+               </td>
+            </tr>
+            <tr>
+               <th>Supervisor's Email</th>
+               <td>jcr@di.uminho.pt</td>
+            </tr>
+         </table>
+         
+         <div>
+            <h2>Work Team</h2>
+            
+            <p>Identifier: A80424</p>
+            <p>Name: José Pedro Saraiva de Carvalho</p>
+            <img src="photo.jpg" width="10%"></img>
+            
+         </div>
+         
+         <div>
+            <h2>Abstract</h2>
+            
+            <p>Primeiramente foi gerado um ficheiro 
+               <b>CSV</b>, 
+               <i>PRI2019-Avaliacao.csv</i>, a partir da informação apresentada pelo docente de PRI na plataforma e-learning.
+               Alguma informação dos alunos foi recolhida desse ficheiro CSV, sendo depois transferida
+               para um outro ficheiro em formato 
+               <b>XML</b> 
+               <i>studentsPRI.xml</i>, com ajuda de um script elaborado em Python, 
+               <i>extracao.py</i>.
+            </p>
+            
+            <p>A informação em formato XML foi convertida, utilizando um ficheiro XSLT 
+               <i>students.xsl</i>, para o formato Turtle, 
+               <i>students.ttl</i>. Entretanto outro ficheiro em formato Turtle, 
+               <i>proto.ttl</i>, foi gerado com a parte estrutural da ontologia, com o auxílio do 
+               <i>Protégé</i>.
+            </p>
+            
+            <p>No final são juntados os dois ficheiros em formato Turtle num único ficheiro, 
+               <i>TPC1.ttl</i>, representativo da ontologia de forma integral.
+            </p>
+            
+         </div>
+         
+         <div>
+            <h2>Deliverables</h2>
+            <ul>
+               
+               <li>
+                  <a href="../PR">Diretoria relativa ao Project Record</a>
+               </li>
+               
+               <li>
+                  <a href="../TPC">Diretoria onde se encontram os Conteúdos do TPC</a>
+               </li>
+               
+            </ul>
+         </div>
+         
+      </div>
+   </body>
+</html>
