@@ -1,0 +1,29 @@
+PREFIX : <http://www.semanticweb.org/ze/ontologies/2020/Musica#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+#nomes dos compositores por ordem alfabética
+SELECT ?comp WHERE { 
+	?s :compositor ?comp .
+    ?s a :Obra
+}ORDER BY ASC(STR(?comp))
+
+#titulos das obras de tipo marcha de desfile
+SELECT ?tit WHERE { 
+ 	 ?s :tipo "Marcha de Desfile" .
+    ?s a :Obra.
+    ?s :titulo ?tit
+}
+#para cada obra, quantas partituras estão catalogadas
+SELECT ?s (COUNT(?par) AS ?parts) WHERE
+{
+    ?s a :Obra.
+    ?par a :Instrumento.
+    ?par :é_utilizado_em ?s
+}GROUP BY ?s
+#quais os títulos das obras com partitura para bombo
+SELECT ?tit WHERE { 
+     ?s a :Obra.
+     ?s :titulo ?tit.
+     ?s :necessita_de ?part.
+     ?part a :Instrumento.
+     ?part :designacao "Bombo"
+}
