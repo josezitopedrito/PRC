@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  if lista
+    .w3-container
+      h1 Lista de repositorios
+      each elem in lista.results.bindings
+        p=elem.title.value
+  .w3.container
+    form.w3-container(action="/query" method="post")
+            h3 Repository Name
+            input.w3-input(type="text" name="repos")
+            table.w3-table-all
+              tr
+                td
+                  h1 Query
+                  input.w3-input(type="text" name="query")
+                  input.w3-input(type="submit" value="Enviar")                 
+    h1 Resultados da query
+    if lista2
+      each elem2 in lista2.results.bindings
+        each part in elem2
+          p=part.value
+    form.w3-container(action="/" method="get")
+      input.w3-input(type="submit" value="Limpar")
+                
