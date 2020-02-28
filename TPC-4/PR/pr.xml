@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/ze/Oxygen%20XML%20Editor%2021/pr.dtd">
+<pr>
+    <meta>
+        <keyName>PRC2020-A80424-T4</keyName>
+        <title>Programa em NodeJS que aplica queries ao repositório de músicas do GraphDB abordado no TPC2</title>
+        <bDate>24 de fevereiro de 2020</bDate>
+        <eDate>2 de março de 2020</eDate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workTeam>
+        <member>
+            <identifier>A80424</identifier>
+            <name>José Pedro Saraiva de Carvalho</name>
+            <email>a80424@alunos.uminho.pt</email>
+            <photo path="photo.jpg"/>
+        </member>
+    </workTeam>
+    <abstract>
+        <p>No ficheiro <i>index.js</i> da diretoria <i>routes</i> encontram-se as rotas do projeto.</p>
+        <p>No ficheiro <i>index.pug</i> da diretoria <i>views</i> encontram-se o conjunto total das músicas.</p>
+        <p>No ficheiro <i>one.pug</i> da diretoria <i>views</i> encontram-se a informação particular de uma música.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="../PR">Diretoria relativa ao Project Record</deliverable>
+        <deliverable path="../tpc4">Diretoria onde se encontram os Conteúdos do TPC</deliverable>
+    </deliverables>
+</pr>
