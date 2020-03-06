@@ -1,0 +1,12 @@
+select ?swimmer (SAMPLE(?name) AS ?swimmerName) (SAMPLE(?gender) AS ?swimmerGender) (SAMPLE(?bdate) AS ?swimmerBdate) (SAMPLE(?bplace) AS ?swimmerBplace) (SAMPLE(?ddate) AS ?swimmerDdate) (SAMPLE(?abs) AS ?swimmerAbs) where {
+	?swimmer a dbo:Swimmer.
+	?swimmer foaf:name ?name.
+	?swimmer foaf:gender ?gender.
+	?swimmer dbo:birthDate ?bdate.
+	OPTIONAL{?swimmer dbo:birthPlace ?bplace}
+	OPTIONAL{?swimmer dbo:deathDate ?ddate}
+	OPTIONAL{
+		?swimmer dbo:abstract ?abs
+		filter langMatches(lang(?abs),'en')
+	}
+} GROUP BY ?swimmer
