@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/home/ze/Oxygen%20XML%20Editor%2021/pr.dtd">
+<pr>
+    <meta>
+        <keyName>PRC2020-A80424-T6</keyName>
+        <title>Conjunto de execícios para testar o conhecimento de ontologias e queries em SPARQL</title>
+        <bDate>9 de março de 2020</bDate>
+        <eDate>16 de março de 2020</eDate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workTeam>
+        <member>
+            <identifier>A80424</identifier>
+            <name>José Pedro Saraiva de Carvalho</name>
+            <email>a80424@alunos.uminho.pt</email>
+            <photo path="photo.jpg"/>
+        </member>
+    </workTeam>
+    <abstract>
+        <p>Na diretoria Ex1 é apresentado o grafo requerido.</p>
+        <p>Na diretoria Ex2 é apresentado o ficheiro em formato <i>Turtle</i> ,elaborado com a ajuda do <i>Protégé</i>, representativo da ontologia criada. É também apresentado o ficheiro <b>queries.txt</b> que contém as queries que foram elaboradas sobre a ontologia referida anteriormente.</p>
+        <p>Na diretoria Ex3 é apresentado o ficheiro <b>queries.txt</b> que indica as queries elaboradas em <i>SPARQL</i> sobre a <i>dbpedia</i>.</p>
+        <p>Na diretoria Ex4 é apresentado o ficheiro <b>queries.txt</b> que indica as queries elaboradas em <i>SPARQL</i> sobre a ontologia de <i>Pokémons</i>.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="../PR">Diretoria relativa ao Project Record</deliverable>
+        <deliverable path="../tpc6/Ex1">Diretoria onde se encontram os Conteúdos do primeiro exercício do TPC</deliverable>
+        <deliverable path="../tpc6/Ex2">Diretoria onde se encontram os Conteúdos do segundo exercício do TPC</deliverable>
+        <deliverable path="../tpc6/Ex3">Diretoria onde se encontram os Conteúdos do terceiro exercício do TPC</deliverable>
+        <deliverable path="../tpc6/Ex4">Diretoria onde se encontram os Conteúdos do quarto exercício do TPC</deliverable>
+    </deliverables>
+</pr>

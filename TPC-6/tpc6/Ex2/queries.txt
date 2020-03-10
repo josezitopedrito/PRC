@@ -1,0 +1,30 @@
+PREFIX : <http://www.semanticweb.org/ze/ontologies/2020/Compras#>
+#Lojas que vendem o produto 'Balde'
+select ?name where { 
+	?prod a :Produto.
+    ?prod :codigo 'Balde'.
+    ?loja :vende ?prod.
+    ?loja :nome ?name
+}
+R: Pingo Doce
+
+PREFIX : <http://www.semanticweb.org/ze/ontologies/2020/Compras#>
+#Produto comprados pelo cliente com o nome 'Fernando'
+select ?prodName where { 
+	?cli a :Cliente.
+    ?cli :nome 'Fernando'.
+    ?cli :compra ?prod.
+    ?prod :codigo ?prodName
+}
+R: CD e Piano
+
+PREFIX : <http://www.semanticweb.org/ze/ontologies/2020/Compras#>
+#Clientes da loja com o nome 'FNAC'
+select distinct ?name where { 
+	?loja a :Loja.
+    ?loja :nome 'FNAC'.
+    ?loja :vende ?prod.
+    ?cli :compra ?prod.
+    ?cli :nome ?name
+}
+R: Ana, Fernando e Gregório

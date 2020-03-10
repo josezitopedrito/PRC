@@ -1,0 +1,52 @@
+PREFIX : <http://www.chalkos.net/ontologies/2015/pokemon#>
+PREFIX pokemon: <http://www.chalkos.net/ontologies/2015/pokemon#>
+
+Obtem uma lista de todos os pokemons catalogadas com os seguintes atributos: número, nome em inglês e tipo;
+
+select ?name ?num ?type where { 
+	?s a :Pokemon.
+    ?s :Name ?name.
+    filter langMatches(lang(?name),'en').
+    ?s :Number ?num.
+    ?s :HasType ?type
+}
+
+Quantos pokémons estão catalogadas na ontologia?
+
+select (count (?s) as ?count) where { 
+	?s a :Pokemon
+}
+
+R:151
+
+Quantas evoluções tem o pokémon com número 5?
+
+select * where { 
+	?s a :Pokemon.
+    ?s :Number 5.
+    ?s :EvolvesFrom+ ?to
+}
+
+R:1
+
+Quais são os pokémons para os quais pode evoluir o pokémon de nome "Eevee"?
+
+select ?to where { 
+	?s a :Pokemon.
+    ?s :Name "Eevee".
+    ?s :EvolvesFrom+ ?to
+}
+
+R:0 (Não existe a Eevee)
+
+Quantos tipos diferentes de pokémons exitem na ontologia?
+
+SELECT (count(?type) as ?count) where{
+    ?type a :PokeType
+}
+
+Quantos pokémons existem associados a cada tipo?
+SELECT ?type (count(?name) as ?count) where{
+    ?type a :PokeType.
+    ?name :HasType ?type
+} GROUP BY ?type
